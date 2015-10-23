@@ -1,0 +1,19 @@
+{
+  "name": "multicolour-example",
+  "version": "1.0.0",
+  "description": "An example, Mongo powered version of Multicolour with oauth support.",
+  "main": "index.js",
+  "dependencies": {
+    "multicolour": "^0.1.0",
+    "multicolour-auth-oauth": "^1.0.0",
+    "multicolour-server-hapi": "^1.0.0",
+    "sails-mongo": "^0.11.4"
+  },
+  "keywords": [
+    "multicolour",
+    "mongo",
+    "hapijs"
+  ],
+  "author": "newworldcode <hello@newworld.codes> (https://newworld.codes)",
+  "license": "MIT"
+}
