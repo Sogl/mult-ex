@@ -26,5 +26,5 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
-# A local Apache config file, not fit for the public repo.
-mc.conf
+# Local Apache config files, not fit for the public repo but used by vonfigurator.
+*.conf
