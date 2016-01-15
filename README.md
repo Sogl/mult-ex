@@ -1,6 +1,10 @@
 # multicolour-example
 Example Multicolour App with Hapi server, Mongo and OAuth.
 
+## What is Multicolour?
+
+Multicolour is a library that lets you write JSON to automatically create your REST API with JSONAPI support, OAuth support while letting you choose your database technology and even using multiple database technologies across blueprints.
+
 ### Getting started
 
 1. Make sure you have an instance of Mongo running that you can connect to.  
@@ -35,4 +39,4 @@ To learn more about the structure of these schemas, see the [blueprint documenta
 
 Read more on the [Multicolour wiki](https://github.com/Multicolour/multicolour/wiki)
 
-MIT 2016
+MIT New World Code 2016
