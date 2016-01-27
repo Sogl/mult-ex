@@ -1,42 +1,26 @@
 # multicolour-example
 Example Multicolour App with Hapi server, Mongo and OAuth.
 
-## What is Multicolour?
-
-Multicolour is a library that lets you write JSON to automatically create your REST API with JSONAPI support, OAuth support while letting you choose your database technology and even using multiple database technologies across blueprints.
-
 ### Getting started
 
-1. Make sure you have an instance of Mongo running that you can connect to.  
-2. Update the database configuration to your Mongo connection settings in `config.js`.  
-3. Run `npm i` to get the dependencies for the app.  
-4. To use the auth plugin you'll need a registered app on one of the below services and to add your configuration to `config.js`.
+This example app will connect to your Mongo database server, if you haven't used Mongo
+before or don't have a server to connect to, please read the [Mongo Getting Started][mongo-get-started] documentation to get your own Mongo server up.
 
-```text
-Twitter  
-Facebook  
-GitHub  
-Google  
-Instagram  
-LinkedIn  
-Yahoo  
-Foursquare  
-VK  
-ArcGIS Online  
-Windows Live  
-Nest
-Phabricator  
-BitBucket  
-Reddit  
-Tumblr
-```
+If you already have a Mongo server running, following these steps will get your server up and running.
 
-Running `npm start` will stand your server up and you can view the Swagger docs by visiting [http://localhost:1811/docs](http://localhost:1811/docs).
+1. Update the database configuration to your Mongo connection settings in `config.js`.  
+2. Run `npm i` in the terminal to get the dependencies for the app.  
+3. To use the auth plugin you'll need a registered app on the service you want to use and to add your configuration to `config.js`, if you want to run without auth, comment out line #14 in `app.js`
 
-Edit and create blueprints in the `content/blueprints` to add/edit/remove endpoints from your API.  
+Running `npm start` will start the server up.
+Once you get the `"Server running at: http://localhost:1811"` message you can view the Swagger docs by visiting [http://localhost:1811/docs](http://localhost:1811/docs).
 
-To learn more about the structure of these schemas, see the [blueprint documentation](https://github.com/Multicolour/multicolour/wiki/Blueprints)
+Edit and create blueprints in the `content/blueprints` to add/edit/remove endpoints from your API automatically.  
+
+To learn more about the structure of these schemas, see the [Multicolour blueprint documentation](https://github.com/Multicolour/multicolour/wiki/Blueprints)
 
 Read more on the [Multicolour wiki](https://github.com/Multicolour/multicolour/wiki)
 
-MIT New World Code 2016
+MIT 2016
+
+[mongo-get-started]: https://docs.mongodb.org/getting-started/shell/introduction/
