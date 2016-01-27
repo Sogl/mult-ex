@@ -21,6 +21,20 @@ To learn more about the structure of these schemas, see the [Multicolour bluepri
 
 Read more on the [Multicolour wiki](https://github.com/Multicolour/multicolour/wiki)
 
+### I don't want to use Mongo
+
+You don't have to, Multicolour uses Waterline as it's ORM and you can switch your database tech per environment, per blueprint, however you like. Below is a list of officially supported adapters:
+
+* `sails-disk`
+* `sails-memory`
+* `sails-redis`
+* `sails-postgres`
+* `sails-mongo`
+* `sails-mysql`
+* `sails-arango`
+
+Simply update the `require("sails-mongo")` on line #69 of `config.js` and update the connection details.
+
 MIT 2016
 
 [mongo-get-started]: https://docs.mongodb.org/getting-started/shell/introduction/
