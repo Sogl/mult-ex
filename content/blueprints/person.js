@@ -1,6 +1,10 @@
 "use strict"
 
 module.exports = {
+  /*
+   * We define our columns/keys in the `attributes`
+   * property of our blueprints.
+   */
   attributes: {
     /*
      * Properties in our table/collection
