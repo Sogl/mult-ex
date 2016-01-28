@@ -12,12 +12,15 @@ module.exports = {
      */
     type: {
       required: true,
-      type: "string"
+      type: "string",
+      enum: ["mobile phone", "tablet", "laptop", "tower"]
     },
 
     cost: {
       required: true,
-      type: "string"
+      type: "float",
+      min: 0,
+      max: 3000
     },
 
     /*
@@ -32,7 +35,7 @@ module.exports = {
      * between this gadget and a person
      */
     owner: {
-      model: "gadget"
+      model: "person"
     }
   }
 }

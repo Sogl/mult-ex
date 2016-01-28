@@ -32,6 +32,13 @@ module.exports = {
       collection: "gadget"
     },
 
+    /*
+     * A person also has a user.
+     */
+    user: {
+      model: "user"
+    },
+
     /**
      * We have a `secret` to keep, only this
      * person should ever know their secret
