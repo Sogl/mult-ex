@@ -9,9 +9,13 @@ const my_service = require("multicolour")
   // Register the server plugin.
   .use(require("multicolour-server-hapi"))
 
+// Seed the database with random data based on
+// your blueprints.
+my_service.use(require("multicolour-seed"))
+
   // Register the auth plugin to the server.
 my_service.get("server")
-  .use(require("multicolour-auth-oauth"))
+  // .use(require("multicolour-auth-oauth"))
   .use(require("multicolour-hapi-jsonapi"))
   .reply("csrf_enabled", false)
 
