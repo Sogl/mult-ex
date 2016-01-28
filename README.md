@@ -28,7 +28,7 @@ You don't have to, Multicolour uses Waterline as it's ORM and you can switch you
 * `sails-disk`
 * `sails-memory`
 * `sails-redis`
-* `sails-postgres`
+* `sails-postgresql`
 * `sails-mongo`
 * `sails-mysql`
 * `sails-arango`
