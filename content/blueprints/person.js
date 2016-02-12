@@ -19,7 +19,11 @@ module.exports = {
      * But sometimes, we just want to define
      * it's type, so that's okay as well.
      */
-    age: "integer",
+    age: {
+       type: "integer",
+       min: 0,
+       max: 100
+    },
     secret: "string",
 
     /*

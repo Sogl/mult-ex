@@ -19,7 +19,7 @@ module.exports = {
 
   auth: {
     // CHANGE THIS
-    password: "wbhurigrwbjkgbjkwrnguhguirwhgo9824yt8942hio24tjpo24thioy98GO*I^&IRD%^F*YIUOVFU",
+    password: "12345",
 
     // Configure a Twitter auth strategy.
     providers: [
@@ -66,14 +66,16 @@ module.exports = {
   // which in most cases is "development"
   db: {
     adapters: {
-      development: require("sails-mongo")
+      development: require("sails-postgresql")
     },
     connections: {
       development: {
         adapter: "development",
         host: "localhost",
-        port: 27017,
-        database: "multicolour"
+        port: 5432,
+        user: 'postgres',
+        password: '',
+        database: "mult"
       }
     }
   }
